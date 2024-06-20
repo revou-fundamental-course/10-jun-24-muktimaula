@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maulana Konvversi Suhu</title>
+    <title>Maulana Konversi Suhu</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    
 </head>
 <body>
     <header>
@@ -14,71 +12,72 @@
     </header>
 
     <main>
-        <h2 class="header">masukkan angka derajas celcius (&deg;C)👌 </h2>
-<hr> 
-        <!-- sesction celcius -->
+        <h2 class="header">Masukkan angka derajat Celsius (&deg;C)👌 </h2>
+        <hr>
+
+        <!-- section celcius -->
         <section class="celcius-container">
             <header>
-                <h3>celcius (&deg;C)</h3>
+                <h3>Celcius (&deg;C)</h3>
             </header>
             <section>
-                <textarea name="" id=""></textarea>
+                <textarea id="celciusInput"></textarea>
 
                 <section>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reserve</button>
+                    <button onclick="convertToAll()">Konversi</button>
+                    <button onclick="resetFields()">Reset</button>
+                    <button onclick="reverseText()">Reverse</button>
                 </section> 
             </section>
         </section>
 
         <section class="FdanC-container">
-            <!-- sesction farenheit -->
+            <!-- section fahrenheit -->
             <section>
                 <header>
-                    <h3>farenheit (&deg;C)</h3>
+                    <h3>Fahrenheit (&deg;F)</h3>
                 </header>
                 <section>
-                    <textarea name="" id=""></textarea>
+                    <textarea id="fahrenheitOutput" readonly></textarea>
                 </section>
             </section>
 
-            <!-- sesction celculate -->
+            <!-- section calculate -->
             <section>
                 <header>
-                    <h3>Conversation Calculate(&deg;C)</h3>
+                    <h3>Kelvin (K)</h3>
                 </header>
                 <section>
-                    <textarea name="" id=""></textarea>
+                    <textarea id="kelvinOutput" readonly></textarea>
                 </section>
             </section>  
         </section>   
- <hr/>
-        <!-- sesction formula -->
+
+        <hr/>
+        <!-- section formula -->
         <section>
             <header>
-                <h2>Cara Konversi dari Celcius(&deg;C) ke farenheit(&deg;C)</h2>
+                <h2>Cara Konversi dari Celsius(&deg;C) ke Fahrenheit(&deg;F) dan Kelvin(K)</h2>
             </header>
 
-           
-            <p> Suhu <span class="subject-info">S</span> dalam derajat Farenheit (&deg;C) sama 
-                <span class="subject-info">S</span> dengan dalam derajat Celcius (&deg;C).....
+            <p> Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) sama 
+                <span class="subject-info">S</span> dengan dalam derajat Celsius (&deg;C).....
             </p>
             <p>
                 <span class="subject-info">S</span><sub>(&deg;F)</sub> = 
-                (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) +32 
+                (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) + 32 
             </p>
 
             <p>
-                <span class="subject-info">S</span><sub>(&deg;C)</sub> = 
-                (<span class="subject-info">S</span><sub>(&deg;F)</sub> - 32) / 1.8
+                Suhu <span class="subject-info">S</span> dalam Kelvin (K) sama 
+                <span class="subject-info">S</span> dengan dalam derajat Celsius (&deg;C).....
+            </p>
+            <p>
+                <span class="subject-info">S</span><sub>(K)</sub> = 
+                <span class="subject-info">S</span><sub>(&deg;C)</sub> + 273.15
             </p>
         </section>
-
-         
-
     </main>
-
 
     <script src="javascript/javascript.js"></script>
 </body>
